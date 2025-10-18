@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Contact() {
   const ref = useRef(null);
@@ -77,10 +78,7 @@ export default function Contact() {
                 <Phone className="w-7 h-7 text-cyan-400" />
               </div>
               <h3 className="text-lg md:text-xl font-semibold text-white mb-2">Call Us</h3>
-              <p className="text-cyan-300 font-mono">+91 999XX65455</p>
-              <p className="text-slate-400 text-sm mt-2">
-                Available Monday to Friday, 9 AM - 6 PM IST
-              </p>
+              <p className="text-cyan-300 font-mono">+91 7088660889</p>
             </a>
           </motion.div>
 
@@ -90,23 +88,29 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            {/* Reduced padding on mobile (p-6) */}
+            {/* Card container */}
             <div className="bg-gradient-to-br from-green-900/30 to-slate-800/30 backdrop-blur-sm border border-green-500/20 rounded-2xl p-6 md:p-8 h-full hover:border-green-500/40 transition-all duration-300 hover:scale-105 group">
               <div className="w-14 h-14 bg-green-600/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                 <MessageCircle className="w-7 h-7 text-green-400" />
               </div>
-              <h3 className="text-lg md:text-xl font-semibold text-white mb-2">WhatsApp Community</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+                WhatsApp Community
+              </h3>
               <p className="text-slate-400 mb-4">
                 Join our WhatsApp group for instant updates
               </p>
               <div className="bg-white/10 rounded-lg p-4 flex items-center justify-center">
-                {/* The w-32 h-32 QR code placeholder is fine, it will fit */}
-                <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center">
-                  <span className="text-slate-800 text-xs">soon...</span>
-                </div>
+                <Link
+                  href="https://chat.whatsapp.com/BqstgLz5GgZExcpQciuq9Q?mode=wwc"
+                  target="_blank" 
+                  className="px-6 py-2 bg-white text-slate-900 font-semibold rounded-lg hover:bg-slate-200 transition"
+                >
+                  Join Now
+                </Link>
               </div>
             </div>
           </motion.div>
+
 
           {/* Card 4: Address */}
           <motion.div
