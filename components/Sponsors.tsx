@@ -7,10 +7,9 @@ import Image from 'next/image';
 
 // ✅ Replace these with actual logo image paths in your /public folder
 const sponsors = [
-  { name: 'Tech Innovations Inc', image: '/ideathon-logo.png' },
-  { name: 'Future Labs', image: '/ideathon-logo.png' },
-  { name: 'Digital Ventures', image: '/ideathon-logo.png' },
-  { name: 'Innovation Hub', image: '/ideathon-logo.png' },
+  { name: 'Acic Lab', image: '/5.png' },
+  { name: 'Idea Lab', image: '/6.png' },
+  { name: 'Incubation lab', image: '/9.png' },
 ];
 
 export default function Sponsors() {
