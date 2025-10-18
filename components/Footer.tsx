@@ -54,28 +54,24 @@ export default function Footer() {
 
             <div className="flex items-center gap-4">
               <a
-                href="#"
-                className="w-10 h-10 bg-slate-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5 text-slate-400 hover:text-white" />
-              </a>
-              <a
-                href="#"
+                href="https://x.com/CSWDMIET?t=d8O6AHJE1oGq42aD-Y9g1A&s=09"
+                target='_blank'
                 className="w-10 h-10 bg-slate-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5 text-slate-400 hover:text-white" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/cswdmiet"
+                target='_blank'
                 className="w-10 h-10 bg-slate-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5 text-slate-400 hover:text-white" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/computer-society-of-web-developer/"
+                target='_blank'
                 className="w-10 h-10 bg-slate-800 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label="LinkedIn"
               >
