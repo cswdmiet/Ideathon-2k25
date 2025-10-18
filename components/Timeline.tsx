@@ -14,7 +14,7 @@ const timelineEvents = [
   },
   {
     icon: CheckCircle,
-    title: 'PPT Submission Deadline through Unstop',
+    title: 'Poster Submission Deadline through Unstop',
     date: '18 Oct - 25 Oct 2025',
     description: 'Submit your innovative ideas and project proposals.',
   },

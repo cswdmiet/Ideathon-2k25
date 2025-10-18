@@ -118,7 +118,7 @@ export default function Judging() {
                 <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0" />
                 <div>
                   <h4 className="text-white font-semibold mb-1">Submission Format</h4>
-                  <p className="text-slate-400">Submit a detailed project proposal with problem statement, solution, and implementation plan.</p>
+                  <p className="text-slate-400">Submit a One Page A3 size Poster with problem statement, solution, and implementation plan.</p>
                 </div>
               </div>
 

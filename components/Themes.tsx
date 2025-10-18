@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Cpu, Heart, Building2, Leaf, Smartphone, Globe, Bike, Orbit } from 'lucide-react';
+import { Cpu, Heart, Building2, Leaf, Smartphone, Globe, Bike, Orbit, Banknote } from 'lucide-react';
 
 const themes = [
   {
@@ -94,6 +94,15 @@ const themes = [
     bgColor: 'from-orange-900/30 to-slate-800/30',
     borderColor: 'border-orange-500/20 hover:border-orange-500/40',
   },
+  {
+  icon: Banknote,
+  title: 'Banking & Finance',
+  description: 'Fintech innovation, secure transactions, financial inclusion, digital banking solutions.',
+  color: 'from-blue-600 to-cyan-400',
+  bgColor: 'from-blue-900/30 to-slate-800/30',
+  borderColor: 'border-blue-500/20 hover:border-blue-500/40',
+}
+
 ];
 
 export default function Themes() {
