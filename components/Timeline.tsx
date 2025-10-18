@@ -8,15 +8,27 @@ import { Calendar, CheckCircle, Users, Trophy } from 'lucide-react';
 const timelineEvents = [
   {
     icon: Calendar,
-    title: 'Submission through Unstop',
-    date: '18 Oct 2025 - 25 Nov 2025',
-    description: 'Submission round through Unstop platform.',
+    title: 'Registration Opens',
+    date: '18 Oct 2025',
+    description: 'Sign up and form your teams to participate in the challenge.',
   },
   {
     icon: CheckCircle,
-    title: 'Offline Round',
+    title: 'PPT Submission Deadline through Unstop',
+    date: '18 Oct - 25 Oct 2025',
+    description: 'Submit your innovative ideas and project proposals.',
+  },
+  {
+    icon: Users,
+    title: 'Shortlisting',
+    date: '26 Oct - 28 Oct 2025',
+    description: 'Selected teams will be announced and notified.',
+  },
+  {
+    icon: Trophy,
+    title: 'Final Presentation',
     date: '31 Oct 2025',
-    description: 'Final round will be the on-campus round.',
+    description: 'Present your ideas to judges and compete for prizes.',
   },
 ];
 
@@ -54,9 +66,8 @@ export default function Timeline() {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className={`relative flex flex-col md:flex-row items-center ${
-                  index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                }`}
+                className={`relative flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''
+                  }`}
               >
                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
                   <div className="bg-gradient-to-br from-blue-900/30 to-slate-800/30 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-6 hover:border-blue-500/40 transition-all duration-300 hover:scale-105">
